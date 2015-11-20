@@ -1,0 +1,23 @@
+{
+  "name": "node-magento2",
+  "version": "0.0.1",
+  "description": "Consume Magento 2 REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamj88/node-magento2.git"
+  },
+  "keywords": [
+    "magento",
+    "rest"
+  ],
+  "author": "Adam Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamj88/node-magento2/issues"
+  },
+  "homepage": "https://github.com/adamj88/node-magento2#readme"
+}
