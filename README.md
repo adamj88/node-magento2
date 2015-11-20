@@ -22,5 +22,6 @@ See http://devdocs.magento.com/guides/v2.0/rest/list.html for a complete list
 - [ ] Quote
 - [ ] Sales
 - [ ] SalesRule
+- [ ] Search
 - [ ] Store
 - [ ] Tax
