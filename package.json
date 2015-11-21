@@ -2,22 +2,43 @@
   "name": "node-magento2",
   "version": "0.0.1",
   "description": "Consume Magento 2 REST API",
+  "homepage": "https://github.com/adamj88/node-magento2#readme",
+  "author": "Adam Johnson",
+  "files": [
+    "dist"
+  ],
   "main": "index.js",
+  "keywords": [
+    "magento",
+    "rest"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp",
+    "prepublish": "gulp prepublish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamj88/node-magento2.git"
   },
-  "keywords": [
-    "magento",
-    "rest"
-  ],
-  "author": "Adam Johnson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adamj88/node-magento2/issues"
   },
-  "homepage": "https://github.com/adamj88/node-magento2#readme"
+  "dependencies": {
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-babel": "^5.1.0",
+    "del": "^2.0.2",
+    "babel-core": "^5.5.0",
+    "isparta": "^3.0.3"
+  }
 }
