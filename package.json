@@ -25,7 +25,8 @@
     "url": "https://github.com/adamj88/node-magento2/issues"
   },
   "dependencies": {
-    "meow": "^3.3.0"
+    "meow": "^3.3.0",
+    "restler": "^3.4.0"
   },
   "devDependencies": {
     "gulp": "^3.6.0",
