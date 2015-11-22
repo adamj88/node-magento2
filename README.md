@@ -16,7 +16,7 @@ var Magento2Api = require('magento2');
 magento = new Magento2Api({
     url: 'http://example.com', // without trailing slash
     username: 'admin',
-    password: 's3cur1ty'
+    password: 'password'
 });
 
 magento.get('categories').on('complete', function(result) {
