@@ -41,7 +41,12 @@ magento.get('categories').on('complete', function(result) {
 
 ## End points
 
-See http://devdocs.magento.com/guides/v2.0/rest/list.html for a complete list
+For a complete list of endpoints see:
+
+- http://devdocs.magento.com/guides/v2.0/rest/list.html
+- http://devdocs.magento.com/swagger/index.html
+
+Those implemented in this module:
 
 - [ ] Backend [#1](https://github.com/adamj88/node-magento2/issues/1)
 - [ ] Bundle [#2](https://github.com/adamj88/node-magento2/issues/2)
