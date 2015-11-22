@@ -15,7 +15,7 @@ var Magento2Api = require('magento2');
 
 magento = new Magento2Api({
     url: 'http://example.com', // without trailing slash
-    username: 'admin',
+    username: 'username',
     password: 'password'
 });
 
