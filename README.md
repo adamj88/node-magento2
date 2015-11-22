@@ -1,6 +1,43 @@
 # Consume Magento 2 REST API
 
-Currently a work in progress, looking for contributors to help implement Magento 2's REST API.
+[![Build Status](https://travis-ci.org/adamj88/node-magento2.svg?branch=master)](https://travis-ci.org/adamj88/node-magento2)
+
+Currently a work in progress.
+
+Wrapper for connecting to Magento 2 REST API. 
+
+## Example Usage
+
+This uses [restler](https://github.com/danwrong/restler) as a HTTP Client library, please see their documentation for more examples/sample usage.
+
+```js
+var Magento2Api = require('magento2');
+
+magento = new Magento2Api({
+    url: 'http://example.com', // without trailing slash
+    username: 'admin',
+    password: 's3cur1ty'
+});
+
+magento.get('categories').on('complete', function(result) {
+  if (result instanceof Error) {
+    console.log('Error:', result.message);
+    this.retry(5000); // try again after 5 sec
+  } else {
+    console.log(result);
+  }
+});
+```
+
+## Options
+
+|      Option      |   Type     | Required |                             Description                              |
+| ---------------- | ---------- | -------- | -------------------------------------------------------------------- |
+| `url`            | `String`   | yes      | Your Store URL, example: http://example.com (without trailing slash) |
+| `username`       | `String`   | yes      | Your API username                                                    |
+| `password`       | `String`   | yes      | Your API password                                                    |
+| `version`        | `Interger` | no       | API version, default is `1`                                          |
+| `encoding`       | `String`   | no       | Encoding, default is 'utf-8'                                         |
 
 ## End points
 
