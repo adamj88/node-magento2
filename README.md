@@ -6,25 +6,47 @@ Currently a work in progress.
 
 Wrapper for connecting to Magento 2 REST API. 
 
+## Installation
+
+```sh
+npm install magento2 --save
+```
+
 ## Example Usage
 
 This uses [restler](https://github.com/danwrong/restler) as a HTTP Client library, please see their documentation for more examples/sample usage.
 
 ```js
-var Magento2Api = require('magento2');
+var Magento2 = require('magento2');
 
-magento = new Magento2Api({
-    url: 'http://example.com', // without trailing slash
+var opt = {
+  url: 'http://example.com', // without trailing slash
+  username: 'username',
+  password: 'password'
+};
+
+var magento = new Magento2(opt);
+
+// Create a Token
+magento.Api.token = magento.Api.post('integration/admin/token', {
     username: 'username',
     password: 'password'
-});
-
-magento.get('categories').on('complete', function(result) {
+}).on('complete', function(result) {
   if (result instanceof Error) {
     console.log('Error:', result.message);
     this.retry(5000); // try again after 5 sec
   } else {
-    console.log(result);
+    return result;
+  }
+});
+
+// Get Category list
+categories = magento.Catalog.getCategories.on('complete', function(result) {
+  if (result instanceof Error) {
+    console.log('Error:', result.message);
+    this.retry(5000); // try again after 5 sec
+  } else {
+    return result;
   }
 });
 ```
