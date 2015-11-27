@@ -9,7 +9,7 @@ Wrapper for connecting to Magento 2 REST API.
 ## Installation
 
 ```sh
-  npm install magento2 --save
+npm install magento2 --save
 ```
 
 ## Example Usage
