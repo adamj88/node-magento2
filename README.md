@@ -28,10 +28,7 @@ var opt = {
 var magento = new Magento2(opt);
 
 // Create a Token
-magento.Api.token = magento.Api.post('integration/admin/token', {
-    username: 'username',
-    password: 'password'
-}).on('complete', function(result) {
+magento.Api.token = magento.Integration.getToken().on('complete', function(result) {
   if (result instanceof Error) {
     console.log('Error:', result.message);
     this.retry(5000); // try again after 5 sec
