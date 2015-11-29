@@ -1,0 +1,9 @@
+prepublish:
+  - lint
+  - babel
+
+default:
+  - watch
+
+lint:
+  - eslint
