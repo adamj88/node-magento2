@@ -87,5 +87,5 @@ Those implemented in this module:
 - [ ] Sales [#15](https://github.com/adamj88/node-magento2/issues/15)
 - [ ] SalesRule [#16](https://github.com/adamj88/node-magento2/issues/16)
 - [ ] Search [#19](https://github.com/adamj88/node-magento2/issues/19)
-- [ ] Store [#17](https://github.com/adamj88/node-magento2/issues/17)
+- [x] Store [#17](https://github.com/adamj88/node-magento2/issues/17)
 - [ ] Tax [#18](https://github.com/adamj88/node-magento2/issues/18)
