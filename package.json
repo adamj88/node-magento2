@@ -1,6 +1,6 @@
 {
   "name": "magento2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Consume Magento 2 REST API",
   "homepage": "https://github.com/adamj88/node-magento2#readme",
   "author": "Adam Johnson",
@@ -34,6 +34,7 @@
     "del": "^2.0.2",
     "grunt": "^0.4.5",
     "grunt-babel": "^6.0.0",
+    "grunt-bump": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-coveralls": "^1.0.0",
     "grunt-eslint": "^17.3.1",
